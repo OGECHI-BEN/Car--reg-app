@@ -52,57 +52,60 @@
         @yield('content')
     </main>
       
-    <footer class="bg-yellow-700 rounded-sm shadow w-full">
-        <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
-            <div>
-                <a href="#" class="flex items-center flex-col md:flex-row md:space-x-3 md:rtl:space-x-reverse">
-                    <img src="{{asset('img/white-logo-name.png')}}" alt="car icon" class="h-20 rounded-full ">
-                    {{-- <span class="self-center text-black text-xl font-semibold hover:text-white">VIO INSPECTION</span> --}}
-                </a>
+    <footer class="bg-black flex  rounded-sm shadow w-full p-8 px-10 md:px-12 lg:*:px-16">
+        <div class="w-full mx-auto max-w-screen-xl p-4">
+            <div class="grid grid-cols-1 md:grid-cols-3  sm:items-center sm:justify-evenly md:px-12 lg:*:px-16">
+                <div class="flex flex-col items-center justify-center">
+                    <a href="#" class="flex items-center flex-col md:flex-row md:space-x-3 md:rtl:space-x-reverse mb-6 md:mb-10">
+                        <img src="{{asset('img/white-logo-name.png')}}" alt="logo" class="h-20 rounded-full ">
+                        {{-- <span class="self-center text-black text-xl font-semibold hover:text-white">VIO INSPECTION</span> --}}
+                    </a>
+                    <form action="" class="flex items-center mb-6 justify-between md:mb-10 ">
+                        <input type="email" placeholder="Enter your email" class="focus:border-transparent px-4 py-2 rounded-md text-black gap-3">
+                        <button type="submit" class="px-4 text-white py-2 bg-yellow-700">Subscribe</button>
+                    </form>
+                </div>
+                <div  class="w-full md:block md:w-auto">
+                    <ul class="font-medium flex flex-col justify-center items-center md:items-start p-4 md:p-0 mt-4   rtl:space-x-reverse md:mt-0 md:border-0 ">
+                        <li class="mb-2"> 
+                            <a href="{{url('/about')}}" class="block py-2 px-3 text-white rounded md:p-0 dark:text-white hover:text-yellow-700" >About</a>
+                        </li>
+                        <li class="mb-2"> 
+                            <a href="{{url('/vehicleRegistration')}}" class="block py-2 px-3 text-white rounded md:p-0 dark:text-white hover:text-yellow-700" > Vehicle Registration</a>
+                        </li>
+                        <li class="mb-2"class="mb-2"> 
+                            <a href="{{url('/vehicleinspection')}}" class="block py-2 px-3 text-white rounded md:p-0 dark:text-white hover:text-yellow-700" >Vehicle Inspection</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="{{url('/signin')}}" class="block py-2 px-3 text-white rounded md:p-0 dark:text-white hover:text-yellow-700" >Sign In</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="{{url('/renew')}}" class="block py-2 px-3 text-white rounded md:p-0 dark:text-white hover:text-yellow-700" >Renew</a>
+                        </li>
+                    
+                    </ul>
+                </div>
+                <div class="flex flex-row sm:flex-col items-center md:items-start space-x-3 justify-center md:space-x-0 md:space-y-3 md:rtl:space-x-reverse md:justify-start">
+                    <a href="#" class="flex items-center flex-col md:flex-row md:space-x-3 md:rtl:space-x-reverse">
+                        <img src="{{asset('img/facebook.png')}}" alt="facebook" width="30" class="rounded-[50%] ">
+                    </a>
+                    <a href="#" class="flex items-center flex-col md:flex-row md:space-x-3 md:rtl:space-x-reverse">
+                        <img src="{{asset('img/instagram.png')}}" alt="instagram" width="30" class="rounded-[50%]  ">
+                    </a>
+                    <a href="#" class="flex items-center flex-col md:flex-row md:space-x-3 md:rtl:space-x-reverse">
+                        <img src="{{asset('img/youtube.png')}}" alt="youtube" width="30" class="rounded-[50%] ">
+                    </a>
+                    <a href="#" class="flex items-center flex-col md:flex-row md:space-x-3 md:rtl:space-x-reverse">
+                        <img src="{{asset('img/linkedin.png')}}" alt="linkedin" width="30" class="rounded-[50%]">
+                    </a>
+                </div>
             </div>
-            <div class="flex items-center space-x-3 justify-center">
-                <a href="#" class="flex items-center flex-col md:flex-row md:space-x-3 md:rtl:space-x-reverse">
-                    <img src="{{asset('img/facebook.png')}}" alt="car icon" class="h-10 rounded-full ">
-                </a>
-                <a href="#" class="flex items-center flex-col md:flex-row md:space-x-3 md:rtl:space-x-reverse">
-                    <img src="{{asset('img/instagram.png')}}" alt="car icon" class="h-10 rounded-full ">
-                </a>
-                <a href="#" class="flex items-center flex-col md:flex-row md:space-x-3 md:rtl:space-x-reverse">
-                    <img src="{{asset('img/youtube.png')}}" alt="car icon" class="h-10 rounded-full ">
-                </a>
-                <a href="#" class="flex items-center flex-col md:flex-row md:space-x-3 md:rtl:space-x-reverse">
-                    <img src="{{asset('img/linkedin.png')}}" alt="car icon" class="h-10 rounded-full ">
-                </a>
-            </div>
+            <div class="mt-6 md:mt-12 flex justify-center items-center border-t border-white mx-16 pb-10">
+               <span class="text-sm text-yellow-700 font-bold sm:text-center"> &copy;2024 &nbsp; 
+                <span class="text-sm text-white sm:text-center">All Rights Reserved.</span>
+                <a href="https://ogechiben.dokohotelsasaba.com/" target="_blank" class="text-yellow-700">Min3rva</a> &nbsp; </span> 
+            </div> 
         </div>
-        <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center justify-center">
-          
-            <div  class=" w-full md:block md:w-auto">
-                <ul class="font-medium flex flex-col justify-center items-center p-4 md:p-0 mt-4  md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 ">
-                
-                    <li> 
-                        <a href="{{url('/about')}}" class="block py-2 px-3 text-white rounded md:p-0 dark:text-white hover:text-black" >About</a>
-                    </li>
-                    <li> 
-                        <a href="{{url('/vehicleRegistration')}}" class="block py-2 px-3 text-white rounded md:p-0 dark:text-white hover:text-black" > Vehicle Registration</a>
-                    </li>
-                    <li> 
-                        <a href="{{url('/vehicleinspection')}}" class="block py-2 px-3 text-whiterounded md:p-0 dark:text-white hover:text-black" >Vehicle Inspection</a>
-                    </li>
-                    <li>
-                         <a href="{{url('/signin')}}" class="block py-2 px-3 text-white rounded md:p-0 dark:text-white hover:text-black" >Sign In</a>
-                    </li>
-                    <li>
-                         <a href="{{url('/renew')}}" class="block py-2 px-3 text-white rounded md:p-0 dark:text-white hover:text-black" >Renew</a>
-                    </li>
-                   
-                </ul>
-            </div>
-        </div>
-        <div class="flex justify-center items-center border-t border-white mx-16">
-            <span class="text-sm text-black font-bold sm:text-center"> &copy;2024 &nbsp; <a href="https://sundimension.com.ng/" target="_blank">Sundimension</a> &nbsp; </span> <span class="text-sm text-white sm:text-center">All Rights Reserved.</span>
-        </div> 
     </footer>
-    
 </body>
 </html>
