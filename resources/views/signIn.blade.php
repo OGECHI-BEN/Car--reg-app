@@ -20,7 +20,7 @@
     <div class="mb-3">
         <label for="password" class=" block mb-2 text-sm text-gray-900 da"> Password:</label>
         <input type="password" id="password" name="password" required class="bg-gray-200 border border-gray-300 text-gray-950 text-lg focus:ring-gray-800 block w-full p-3 " value="{{old('password')}}">
-        <span class="text-red-500"></span>
+        <span class="text-red-500">@error('password'){{$message}} @enderror</span>
     </div> 
 
    
@@ -34,7 +34,7 @@
          <button type="submit" class="text-white bg-green-900 hover:bg-green-950 focus:ring-4 focus:outline-none focus:ring-green-600 font-mediun rounded-lg text-center text-sm w-full sm:w-auto px-5 py-3 font-bold"> Submit</button>
     </div>
     <div>
-        <a href="signup" class=" text-xl text-green-900">Don't have an account!!? <span  class="text-xl font-bold text-yellow-700"> Log in</span></a>
+        <a href="signup" class=" text-xl text-green-900">Don't have an account!!? <span  class="text-xl font-bold text-yellow-700"> Sign UP</span></a>
     </div>
     
 </form>

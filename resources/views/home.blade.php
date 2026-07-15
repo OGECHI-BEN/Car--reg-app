@@ -7,7 +7,7 @@
         <div class="container mx-auto">
             <h2 class="text-4xl text-white font-bold">Ensure Your Vehicle's Safety</h2>
             <p class="text-lg text-white mt-4">Comprehensive vehicle inspection services to keep you safe on the road.</p>
-            <a href="#" class="mt-8 inline-block bg-yellow-700 text-white px-6 py-3 rounded-lg shadow-lg font-semibold">Get Started</a>
+            <a href="{{url('/vehicleRegistration')}}" class="mt-8 inline-block bg-yellow-700 text-white px-6 py-3 rounded-lg shadow-lg font-semibold">Get Started</a>
         </div>
     </header>
 
